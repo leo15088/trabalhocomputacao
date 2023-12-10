@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 import pickle
 from datetime import datetime
-import trabalhoFinal
+from trabalhoFinal import Usuario, ItemDeCompra,Renda
 
 class TelaLogin:
     def __init__(self, janela):
@@ -119,7 +119,7 @@ class TelaCadastro:
         self.root.geometry("300x200")
 
     def salvar_cadastro(self):
-        novo_usuario = Usuario(self.entry_nome.get(), self.entry_senha.get())
+        novo_usuario = Usuario(self.entry_nome.get(), self.entry_senha.get(),[],[])
         self.usuarios.append(novo_usuario)
         self.salvar_callback()
         self.root.destroy()
