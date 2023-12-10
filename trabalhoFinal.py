@@ -114,9 +114,5 @@ class Renda:
     def __str__(self):
         return f'A renda: {self.__nome}\n valor:{self.__valor}\n fonte:{self.fonte}\n{self.dataDeRecebimento}'
 
-try:
-    Renda1 = Renda('fdfe', 11.0, 'ityl')
-    print(Renda1)
-except ValueError as e:
-    print(e)
+
     
